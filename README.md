@@ -61,9 +61,9 @@ $ conda create -n keyclass python=3.8
 $ conda activate keyclass
 $ conda install -c pytorch pytorch=1.10.0 cudatoolkit=10.2
 $ conda install -c conda-forge snorkel=0.9.8
-$ conda install -c huggingface tokenizers=0.10.1
+$ conda install -c huggingface tokenizers=0.10.3
 $ conda install -c huggingface transformers=4.11.3
-$ conda install -c conda-forge sentence-transformers=2.0.0
+$ conda install -c conda-forge sentence-transformers=2.2.2
 $ conda install jupyter notebook
 ```
 Alternatively, we have also provided the conda .yaml file, so the environment can be recreated using the following steps:
@@ -78,10 +78,10 @@ To reproduce the results in our paper, run the following commands.
 ```
 $ cd scripts
 $ bash get_data.sh
-$ python run_all.py --config../config_files/config_imdb.yml
-$ python run_all.py --config../config_files/config_agnews.yml
-$ python run_all.py --config../config_files/config_dbpedia.yml
-$ python run_all.py --config../config_files/config_amazon.yml
+$ python run_all.py --config ../config_files/config_imdb.yml
+$ python run_all.py --config ../config_files/config_agnews.yml
+$ python run_all.py --config ../config_files/config_dbpedia.yml
+$ python run_all.py --config ../config_files/config_amazon.yml
 ```
 Additionally, we release our [pretrained models](https://github.com/autonlab/KeyClass/releases/tag/v1.0). Please see the tutorial notebook above on evaluating trained models.
 
